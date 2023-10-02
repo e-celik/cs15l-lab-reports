@@ -89,7 +89,7 @@ ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ecelik@EkinLaptop:~/lecture1$
 ```
-When a user runs 'cat' without any arguments, the terminal seems to freeze, without prompting a new command, but instead, it simply repeats whatever input the user does after they type a newline character. The terminal stops waiting for user input once 'ctrl+d,' or the "logout/exit" character. This output is expected.
+When a user runs 'cat' without any arguments, the terminal seems to freeze, without prompting a new command, but instead, it simply repeats whatever input the user does after they type a newline character. The terminal stops waiting for user input once 'ctrl+d,' or the "logout/exit" character is pressed. This output is expected.
 
 **Directory Argument**
 ```
