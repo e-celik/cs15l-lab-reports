@@ -3,13 +3,13 @@ By Ekin Celik
 ## Testing Command: cd
 **No Argument:**
 ```
-ecelik@EkinLaptop:~$ pwd
-/home/ecelik
-ecelik@EkinLaptop:~$ cd
+ecelik@EkinLaptop:~/lecture1$ pwd
+/home/ecelik/lecture1
+ecelik@EkinLaptop:~/lecture1$ cd
 ecelik@EkinLaptop:~$ pwd
 /home/ecelik
 ```
-The command "change directory" requires a directory as an argument in order to have an effect. There is no error, it is only useless.
+The command "change directory" functions both with and without an argument. If there is no argument, then it will revert back to the home directory: ~. If provided a directory, then cd will change into that directory.
 
 **Directory Argument:**
 ```
@@ -30,7 +30,7 @@ ecelik@EkinLaptop:~/lecture1$ cd README
 ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The command fails, because 'cd' expects a path to a directory as an argument, and README is not a directory.
+The command fails, because 'cd' expects a path to a directory as an argument, and README is not a directory, instead, README is a file, specifically a text file. It would be impossible to change the directory to a file, because a file does not contain any subdirectories, or other files.
 
 ## Testing Command: ls
 **No Argument**
