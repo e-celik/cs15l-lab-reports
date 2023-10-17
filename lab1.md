@@ -9,7 +9,7 @@ ecelik@EkinLaptop:~/lecture1$ cd
 ecelik@EkinLaptop:~$ pwd
 /home/ecelik
 ```
-The command "change directory" functions both with and without an argument. If there is no argument, then it will revert back to the home directory: ~. If provided a directory, then cd will change into that directory.
+The command "change directory" functions both with and without an argument. If there is no argument, then it will revert back to the home directory: ~. If provided a directory, then cd will change into that directory. NOT AN ERROR
 
 **Directory Argument:**
 ```
@@ -30,7 +30,7 @@ ecelik@EkinLaptop:~/lecture1$ cd README
 ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The command fails, because 'cd' expects a path to a directory as an argument, and README is not a directory, instead, README is a file, specifically a text file. It would be impossible to change the directory to a file, because a file does not contain any subdirectories, or other files.
+The command fails, because 'cd' expects a path to a directory as an argument, and README is not a directory, instead, README is a file, specifically a text file. It would be impossible to change the directory to a file, because a file does not contain any subdirectories, or other files. ERROR
 
 ## Testing Command: ls
 **No Argument**
@@ -42,7 +42,7 @@ Hello.class  Hello.java  README  messages
 ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The 'ls' command lists the contents of the working directory if no arguments are given. This output is expected.
+The 'ls' command lists the contents of the working directory if no arguments are given. This output is expected. NOT AN ERROR
 
 **Directory Argument**
 ```
@@ -54,7 +54,7 @@ ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ecelik@EkinLaptop:~/lecture1$
 ```
-The 'ls' command, when provided an argument of a file path, will print the contents of that file path. This is what happened here, as expected.
+The 'ls' command, when provided an argument of a file path, will print the contents of that file path. This is what happened here, as expected. NOT AN ERROR
 
 **File Argument**
 ```
@@ -65,7 +65,7 @@ Hello.java
 ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The 'ls' command will simply print the name of the file if the passed argument is a file. It will not fail, but it is a quite useless command, except to perhaps relay that the specified file is not a directory.
+The 'ls' command will simply print the name of the file if the passed argument is a file. It will not fail, but it is a quite useless command, except to perhaps relay that the specified file is not a directory. NOT REALLY AN ERROR
 
 ## Testing Command: cat
 **No Argument**
@@ -89,7 +89,7 @@ ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ecelik@EkinLaptop:~/lecture1$
 ```
-When a user runs 'cat' without any arguments, the terminal seems to freeze, without prompting a new command, but instead, it simply repeats whatever input the user does after they type a newline character. The terminal stops waiting for user input once 'ctrl+d,' or the "logout/exit" character is pressed. This output is expected.
+When a user runs 'cat' without any arguments, the terminal seems to freeze, without prompting a new command, but instead, it simply repeats whatever input the user does after they type a newline character. The terminal stops waiting for user input once 'ctrl+d,' or the "logout/exit" character is pressed. This output is expected. KIND OF AN ERROR
 
 **Directory Argument**
 ```
@@ -100,7 +100,7 @@ cat: messages/: Is a directory
 ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The 'cat' command seems to expect only a blank argument or a file argument. Providing it a directory causes a fail, as shown here.
+The 'cat' command seems to expect only a blank argument or a file argument. Providing it a directory causes a fail, as shown here. ERROR
 
 **File Argument**
 ```
@@ -120,7 +120,7 @@ public class Hello {
 }ecelik@EkinLaptop:~/lecture1$ pwd
 /home/ecelik/lecture1
 ```
-The cat command outputs the contents of a specified file. It has worked as expected here, as it printed the code contained within the .java file.
+The cat command outputs the contents of a specified file. It has worked as expected here, as it printed the code contained within the .java file. NOT AN ERROR
 
 ## _EOF_
 
