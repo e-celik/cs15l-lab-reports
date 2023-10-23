@@ -51,3 +51,11 @@ class StringServer {
 }
 ```
 Screenshots:
+![after1](./test2.png)
+In this instance, the method that was called is handleRequest() which just takes an input of a URL. The relevant fields for this call are the string, as well as the counter for how many inputs we have made. After this method runs, the String has been updated, and the counter has been incremented.
+![after2](./test3.png)
+Once again, the same method is called, and given just a URL as an argument. This time, the URL is different, but the logic works the same. The fields that are used are myString and n, which are the string and counter variables. They are updated as such: myString gains a newline, a number, a period, a space, and the user input, while the counter, n, simply gets incremented by one.
+## Part 2
+Here is where my private keys are:
+![privatekeys](./privatekeylocal.png)
+
