@@ -1,4 +1,4 @@
-# Lab Report Week 1
+# Lab Report 2
 By Ekin Celik
 ## Part 1
 Code:
