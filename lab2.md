@@ -57,7 +57,7 @@ In this instance, the method that was called is handleRequest() which just takes
 Once again, the same method is called, and given just a URL as an argument. This time, the URL is different, but the logic works the same. The fields that are used are myString and n, which are the string and counter variables. They are updated as such: myString gains a newline, a number, a period, a space, and the user input, while the counter, n, simply gets incremented by one.  
 ## Part 2
 Here is where my private keys are (Specifically, in the file called id_ed25519):  
-![privatekeys](./privatekeylocal.png)  
+![privatekeys](./newkeys1.png)  
 And here is where my public keys are:  
 ![publickeys](./publickeysremote.png)  
 Here is an example of me being able to login without a password by using these keys:  
