@@ -52,14 +52,14 @@ class StringServer {
 ```
 Screenshots:
 ![after1](./test2.png)  
-In this instance, the method that was called is handleRequest() which just takes an input of a URL. The relevant fields for this call are the string, as well as the counter for how many inputs we have made. After this method runs, the String has been updated, and the counter has been incremented.  
+In this instance, the method that was called is handleRequest() which just takes an input of a URL. The relevant fields for this call are the string, as well as the counter for how many inputs we have made. Before this specific call, the string is empty, and the counter is 0. As handleRequest() runs, it not only returns the string in the argument, but also appends it to the string variable along with appropriate formatting, which, in this case, is just a "1. " and "\n".
 ![after2](./test3.png)  
-Once again, the same method is called, and given just a URL as an argument. This time, the URL is different, but the logic works the same. The fields that are used are myString and n, which are the string and counter variables. They are updated as such: myString gains a newline, a number, a period, a space, and the user input, while the counter, n, simply gets incremented by one.  
+Once again, the same method is called, and given just a URL as an argument. This time, the URL is different, but the logic works the same. The fields that are used are myString and n, which are the string and counter variables. Before the method runs, myString is just "1. Hello!\n", and n is 1. They are updated as such: myString gains a newline '\n', a number, a period, a space ("2. "), and the user input, while the counter, n, simply gets incremented by one, n now equals 2. For adding the new strings to myString, we  simply append myString by using the += operator, which, in java, does what we want.
 ## Part 2
 Here is where my private keys are (Specifically, in the file called id_ed25519):  
 ![privatekeys](./newkeys1.png)  
 And here is where my public keys are:  
-![publickeys](./publickeysremote.png)  
+![publickeys](./newkeys2.png)  
 Here is an example of me being able to login without a password by using these keys:  
 ![login](./login.png)  
 (I keep getting these error messages, and I don't know what they mean. They don't appear to cause any problems.)  
