@@ -109,7 +109,7 @@ OK (2 tests)
 ```
 To run the tests again, I can just find the command in history by pressing uptick twice, then run it by presing enter. 
 
-##
+## GIT ADD/COMMIT/PUSH
 ```
 [ecelik@ieng6-201]:lab7:509$ git add ListExamples.java
 [ecelik@ieng6-201]:lab7:510$ git commit
