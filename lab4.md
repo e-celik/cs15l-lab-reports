@@ -85,9 +85,65 @@ First I type cd. Then, since I only have one directory in ~ that starts with "l,
 ```
 [ecelik@ieng6-201]:lab7:504$ vim ListExamples.java
 ```
+Screenshot from vim just before pressing enter on the command :wq
 ![vimsc](vimsc.png)
 ```
 vim L<tab>.<tab><enter>
 :44<enter>ea<backspace>2<esc>:wq<enter>
 ```
-To enter vim, I can type vim, then capital L, then tab to autocomplete to ListExamples. However, since there are two files that start with "ListExamples," I have to enter another character that will specify which file to use. So, I press "." and then tab again to autocomplete. Next, I must go to line 44, where the error is. I do this by typing a colon followed by the line number, and pressing enter. Then, I skip to the last character of the word with "e", and enter editing mode after the cursor with "a". Finally, I delete the erroneous 1 and replace it with 2. I press escape to exit editing mode, and type :wq in order to write the file and quit vim.
+To enter vim, I can type vim, then capital L, then tab to autocomplete to ListExamples. However, since there are two files that start with "ListExamples," I have to enter another character that will specify which file to use. So, I press "." and then tab again to autocomplete. Next, I must go to line 44, where the error is. I do this by typing a colon followed by the line number, and pressing enter. Then, I skip to the last character of the word with "e", and enter editing mode after the cursor with "a". Finally, I delete the erroneous 1 and replace it with 2. I press escape to exit editing mode, and type :wq in order to write the file and quit vim. 
+
+## RERUN TESTS
+```
+[ecelik@ieng6-201]:lab7:505$ bash test.sh
+JUnit version 4.13.2
+..
+Time: 0.09
+
+OK (2 tests)
+
+[ecelik@ieng6-201]:lab7:506$
+```
+```
+<up><up><enter>
+```
+To run the tests again, I can just find the command in history by pressing uptick twice, then run it by presing enter. 
+
+##
+```
+[ecelik@ieng6-201]:lab7:509$ git add ListExamples.java
+[ecelik@ieng6-201]:lab7:510$ git commit
+[main b9d3ed7] fixed
+ Committer: Ekin Celik <ecelik@ieng6-201.ucsd.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[ecelik@ieng6-201]:lab7:511$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:e-celik/lab7.git
+   327ab1a..b9d3ed7  main -> main
+[ecelik@ieng6-201]:lab7:512$
+```
+```
+git add L<tab><enter>
+git commit<enter>
+ifixed<esc>:wq<enter>
+git push
+```
+First I must add the file to the commit by using git add. I type "L" and press tab and the file has been autocompleted, so I press enter. Next, I use git commit, which opens vim. In vim, I enter editing mode with "i", and I typed "fixed" as my message. Then, I exit vim by pressing escape, typing :wq, and pressing enter. Finally, I must push the commit by using the command git push.
