@@ -29,6 +29,7 @@ or "prep -h" for more options.
 Reminder to do all CSE 30 related stuff on pi-cluster!
 [ecelik@ieng6-201]:~:501$
 ```
+Keystrokes: (All alphanumeric keys are typed as they were, and I have put non-alphanumeric keys in brackets)
 ```
 <up><enter>
 ```
@@ -46,6 +47,7 @@ Receiving objects: 100% (58/58), 376.37 KiB | 1.40 MiB/s, done.
 Resolving deltas: 100% (21/21), done.
 [ecelik@ieng6-201]:~:502$
 ```
+Keystrokes:
 ```
 git clone <ctrl+v><enter>
 ```
@@ -75,6 +77,7 @@ Tests run: 2,  Failures: 1
 
 [ecelik@ieng6-201]:lab7:504$
 ```
+Keystrokes:
 ```
 cd l<tab><enter>
 bash test.sh
@@ -82,11 +85,13 @@ bash test.sh
 First I type cd. Then, since I only have one directory in ~ that starts with "l," I can use the tab key to autocomplete the path to lab7. Next, I can type the bash command to run the tests. 
 
 ## EDIT CODE
+Keystrokes:
 ```
 [ecelik@ieng6-201]:lab7:504$ vim ListExamples.java
 ```
 Screenshot from vim just before pressing enter on the command :wq
-![vimsc](vimsc.png)
+![vimsc](vimsc.png)  
+Keystrokes:
 ```
 vim L<tab>.<tab><enter>
 :44<enter>ea<backspace>2<esc>:wq<enter>
@@ -104,6 +109,7 @@ OK (2 tests)
 
 [ecelik@ieng6-201]:lab7:506$
 ```
+Keystrokes:
 ```
 <up><up><enter>
 ```
@@ -140,6 +146,7 @@ To github.com:e-celik/lab7.git
    327ab1a..b9d3ed7  main -> main
 [ecelik@ieng6-201]:lab7:512$
 ```
+Keystrokes:
 ```
 git add L<tab><enter>
 git commit<enter>
